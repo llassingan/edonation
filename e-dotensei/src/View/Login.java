@@ -1,4 +1,4 @@
-package e.dotensei;
+package View;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Toolkit;
@@ -44,7 +44,7 @@ public class Login extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
         loginpass = new javax.swing.JPasswordField();
-        login = new javax.swing.JButton();
+        btmasuk = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("E-Donation - Login");
@@ -60,31 +60,30 @@ public class Login extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(51, 51, 255));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/e/dotensei/back_32px.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/back_32px.png"))); // NOI18N
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/e/dotensei/people_50px.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/people_50px.png"))); // NOI18N
 
         jLabel5.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("Login");
+        jLabel5.setText("Masuk");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(121, 121, 121)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(121, 121, 121)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(123, 123, 123))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -123,15 +122,15 @@ public class Login extends javax.swing.JFrame {
         loginpass.setBorder(null);
         jPanel1.add(loginpass, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 280, 180, 30));
 
-        login.setBackground(new java.awt.Color(0, 0, 255));
-        login.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        login.setForeground(new java.awt.Color(255, 255, 255));
-        login.setText("Login");
-        login.setBorder(null);
-        login.setBorderPainted(false);
-        login.setContentAreaFilled(false);
-        login.setOpaque(true);
-        jPanel1.add(login, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 350, 110, 30));
+        btmasuk.setBackground(new java.awt.Color(0, 0, 255));
+        btmasuk.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        btmasuk.setForeground(new java.awt.Color(255, 255, 255));
+        btmasuk.setText("Masuk");
+        btmasuk.setBorder(null);
+        btmasuk.setBorderPainted(false);
+        btmasuk.setContentAreaFilled(false);
+        btmasuk.setOpaque(true);
+        jPanel1.add(btmasuk, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 350, 110, 30));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 40, 320, 410));
 
@@ -178,6 +177,7 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btmasuk;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -187,7 +187,6 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JButton login;
     private javax.swing.JTextField loginmail;
     private javax.swing.JPasswordField loginpass;
     // End of variables declaration//GEN-END:variables
