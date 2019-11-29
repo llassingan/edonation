@@ -49,14 +49,12 @@ public class Register extends javax.swing.JFrame {
         daftarnama = new javax.swing.JTextField();
         jSeparator3 = new javax.swing.JSeparator();
         jLabel7 = new javax.swing.JLabel();
-        no_hp = new javax.swing.JTextField();
         jSeparator4 = new javax.swing.JSeparator();
+        jFormattedTextField1 = new javax.swing.JFormattedTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("E-Donation - Login");
-        setAlwaysOnTop(true);
         setLocation(new java.awt.Point(0, 0));
-        setLocationByPlatform(true);
         setName("login"); // NOI18N
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -159,15 +157,11 @@ public class Register extends javax.swing.JFrame {
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel7.setText("Nomor HP");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 70, 30));
-
-        no_hp.setBorder(null);
-        no_hp.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                no_hpActionPerformed(evt);
-            }
-        });
-        jPanel1.add(no_hp, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 240, 180, 30));
         jPanel1.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 270, 180, 10));
+
+        jFormattedTextField1.setBorder(null);
+        jFormattedTextField1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter()));
+        jPanel1.add(jFormattedTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 240, 180, 30));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 40, 320, 410));
 
@@ -181,10 +175,6 @@ public class Register extends javax.swing.JFrame {
     private void daftarnamaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_daftarnamaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_daftarnamaActionPerformed
-
-    private void no_hpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_no_hpActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_no_hpActionPerformed
 
     /**
      * @param args the command line arguments
@@ -227,6 +217,7 @@ public class Register extends javax.swing.JFrame {
     private javax.swing.JTextField daftarmail;
     private javax.swing.JTextField daftarnama;
     private javax.swing.JPasswordField daftarpass;
+    private javax.swing.JFormattedTextField jFormattedTextField1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -240,6 +231,5 @@ public class Register extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
-    private javax.swing.JTextField no_hp;
     // End of variables declaration//GEN-END:variables
 }
