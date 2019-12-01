@@ -8,7 +8,7 @@ import java.sql.*;
 
 /**
  *
- * @author PRAKTIKAN
+ * @author Angga
  */
 public class Database {
     private Connection con = null;

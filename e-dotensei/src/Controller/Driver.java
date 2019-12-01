@@ -7,7 +7,7 @@ package Controller;
 
 /**
  *
- * @author PRAKTIKAN
+ * @author Angga
  */
 public class Driver {
     public static void main(String[] args) {

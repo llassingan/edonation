@@ -11,7 +11,7 @@ import java.awt.event.ActionListener;
 
 /**
  *
- * @author PRAKTIKAN
+ * @author Angga
  */
 public class ControllerDaftar {
     private Register view;
