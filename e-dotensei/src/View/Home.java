@@ -35,6 +35,8 @@ public class Home extends javax.swing.JFrame {
         btnbantuan = new javax.swing.JButton();
         btntentang = new javax.swing.JButton();
         btnprofil = new javax.swing.JButton();
+        btnkeluar = new javax.swing.JButton();
+        jSeparator6 = new javax.swing.JSeparator();
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator4 = new javax.swing.JSeparator();
         jSeparator5 = new javax.swing.JSeparator();
@@ -86,7 +88,7 @@ public class Home extends javax.swing.JFrame {
         btnbantuan.setBorderPainted(false);
         btnbantuan.setContentAreaFilled(false);
         btnbantuan.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel2.add(btnbantuan, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 20, 60, -1));
+        jPanel2.add(btnbantuan, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 20, 60, -1));
 
         btntentang.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         btntentang.setForeground(new java.awt.Color(255, 255, 255));
@@ -100,7 +102,7 @@ public class Home extends javax.swing.JFrame {
                 btntentangActionPerformed(evt);
             }
         });
-        jPanel2.add(btntentang, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 20, 70, -1));
+        jPanel2.add(btntentang, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 20, 70, -1));
 
         btnprofil.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         btnprofil.setForeground(new java.awt.Color(255, 255, 255));
@@ -109,15 +111,35 @@ public class Home extends javax.swing.JFrame {
         btnprofil.setBorderPainted(false);
         btnprofil.setContentAreaFilled(false);
         btnprofil.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel2.add(btnprofil, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 20, 40, -1));
-        jPanel2.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 40, 50, 10));
-        jPanel2.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 40, 40, 10));
-        jPanel2.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 40, 60, 10));
+        btnprofil.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnprofilActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btnprofil, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 20, 40, -1));
+
+        btnkeluar.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        btnkeluar.setForeground(new java.awt.Color(255, 255, 255));
+        btnkeluar.setText("Keluar");
+        btnkeluar.setBorder(null);
+        btnkeluar.setBorderPainted(false);
+        btnkeluar.setContentAreaFilled(false);
+        btnkeluar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnkeluar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnkeluarActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btnkeluar, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 20, 70, -1));
+        jPanel2.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 40, 50, 10));
+        jPanel2.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 40, 50, 10));
+        jPanel2.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 40, 40, 10));
+        jPanel2.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 40, 60, 10));
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
 
         jTextField1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        jTextField1.setText("Mulai Kampanyemu Sekarang");
+        jTextField1.setText("Mulai Kampanyemu Sekarang!");
         jTextField1.setBorder(null);
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -125,9 +147,9 @@ public class Home extends javax.swing.JFrame {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(34, 34, 34)
+                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(28, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -169,7 +191,7 @@ public class Home extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("<html>  <p style=\"text-align:center;\"> Buat <br/>Donasi <br/> Kamu<br/> Sekarang<p/> <html>"); // NOI18N
+        jLabel3.setText("<html>  <p style=\"text-align:center;\">Ayo<br/>Donasi  <br/> Sekarang<p/> <html>"); // NOI18N
         jLabel3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jPanel11.setBackground(new java.awt.Color(255, 255, 255));
@@ -329,6 +351,14 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btntentangActionPerformed
 
+    private void btnprofilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnprofilActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnprofilActionPerformed
+
+    private void btnkeluarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnkeluarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnkeluarActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -366,6 +396,7 @@ public class Home extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnbantuan;
+    private javax.swing.JButton btnkeluar;
     private javax.swing.JButton btnprofil;
     private javax.swing.JButton btntentang;
     private javax.swing.JButton buatkampanye;
@@ -396,6 +427,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
+    private javax.swing.JSeparator jSeparator6;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JButton lihat;
     private javax.swing.JButton lihat1;
