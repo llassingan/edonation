@@ -62,7 +62,7 @@ public class listkampanye extends javax.swing.JFrame {
 
         judulkampanye.setFont(new java.awt.Font("Arial Black", 0, 24)); // NOI18N
         judulkampanye.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        judulkampanye.setText("Judul Kampanye");
+        judulkampanye.setText("Judul Galang Dana");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -220,6 +220,7 @@ public class listkampanye extends javax.swing.JFrame {
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 860, 480));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**

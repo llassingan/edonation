@@ -6,6 +6,7 @@
 package Controller;
 
 import View.StartScreen;
+import Splash.splashscreen;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -19,6 +20,11 @@ public class ControllerStart implements ActionListener {
     public ControllerStart(){
         view = new StartScreen();
         view.addActionListener(this);
+        try{
+            Thread.sleep(5000);
+        }catch(Exception e){
+            
+        }
         view.setVisible(true);
     }
 
