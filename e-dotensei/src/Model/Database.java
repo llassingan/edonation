@@ -15,7 +15,7 @@ public class Database {
     private Statement stmt = null;
     private ResultSet rs = null;
     
-    private void connect(){
+    void connect(){
         try {
             String url = "jdbc:mysql://localhost/edotensei";
             String user = "root";
@@ -26,18 +26,36 @@ public class Database {
                e.printStackTrace();
         }
     }
-//    public void addBuku(Buku b){
-//        connect();
-//        try{
-//            String query = "INSERT INTO buku VALUES ('"  + b.getKodebuku() + "',"
-//                    + "'" + b.getJudulbuku()+"',"
-//                    + "'" + b.getPenerbit()+"',"
-//                    + "'" + b.getHarga()+ "'"
-//                    + ")";
-//            stmt.executeUpdate(query);
-//                            
-//        }catch(SQLException e){
-//            e.printStackTrace();
-//        }
-//    }
+    public void addUser(User b){
+        connect();
+        try{
+            
+            String query = "INSERT INTO USER VALUES ('" + b.getUser_name() + "',"
+                    + "'" + b.getUser_email()+"',"
+                    + "'" + b.getUser_number()+"',"
+                    + "'" + b.getUser_pass()+ "'"
+                    + ");";
+            //String query = "INSERT INTO USER VALUES (1,'andi','087','masma','pas');";
+            stmt.executeUpdate(query);
+                            
+        }catch(SQLException e){
+            e.printStackTrace();
+        }
+        
+    }
+    
+    public void loginuser(String mail, String pass){
+        connect();
+        try{
+            String query = "SELECT EMAIL FROM USER WHERE EMAIL LIKE '"+mail+"' AND PASS LIKE '"+ pass +";";
+            //String query = "INSERT INTO USER VALUES (1,'andi','087','masma','pas');";
+            stmt.executeUpdate(query);
+                            
+        }catch(SQLException e){
+            e.printStackTrace();
+        }
+        
+    }
 }
+
+

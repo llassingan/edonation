@@ -5,6 +5,7 @@
  */
 package Controller;
 
+import Model.Database;
 import View.Login;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -15,11 +16,13 @@ import java.awt.event.ActionListener;
  */
 public class ControllerLogin implements ActionListener {
     private Login view;
+    private Database db;
 
     public ControllerLogin(){
         view = new Login();
         view.addActionListener(this);
         view.setVisible(true);
+        db = new Database();
     }
 
     @Override
@@ -29,6 +32,9 @@ public class ControllerLogin implements ActionListener {
             new ControllerStart();
             view.setVisible(false);
         }else if(s.equals(view.getBtmasuk())){
+            String mail = view.getLoginmail();
+            String pass =  view.getLoginpass();
+            db.loginuser(mail, pass);
             new ControllerHome();
             view.setVisible(false);
         }  

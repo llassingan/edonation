@@ -4,6 +4,9 @@ import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
+import javax.swing.JFormattedTextField;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
 /**
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -52,7 +55,7 @@ public class Register extends javax.swing.JFrame {
         jSeparator3 = new javax.swing.JSeparator();
         jLabel7 = new javax.swing.JLabel();
         jSeparator4 = new javax.swing.JSeparator();
-        jFormattedTextField1 = new javax.swing.JFormattedTextField();
+        nohp = new javax.swing.JFormattedTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("E-Donation - Login");
@@ -165,14 +168,14 @@ public class Register extends javax.swing.JFrame {
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 70, 30));
         jPanel1.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 270, 180, 10));
 
-        jFormattedTextField1.setBorder(null);
-        jFormattedTextField1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#############"))));
-        jFormattedTextField1.addActionListener(new java.awt.event.ActionListener() {
+        nohp.setBorder(null);
+        nohp.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#############"))));
+        nohp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jFormattedTextField1ActionPerformed(evt);
+                nohpActionPerformed(evt);
             }
         });
-        jPanel1.add(jFormattedTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 240, 180, 30));
+        jPanel1.add(nohp, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 240, 180, 30));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 320, 410));
 
@@ -188,9 +191,9 @@ public class Register extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_daftarnamaActionPerformed
 
-    private void jFormattedTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField1ActionPerformed
+    private void nohpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nohpActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jFormattedTextField1ActionPerformed
+    }//GEN-LAST:event_nohpActionPerformed
 
     
 
@@ -200,6 +203,22 @@ public JButton getBtback(){
 
     public JButton getBtdaftar() {    
         return btdaftar;
+    }
+
+    public String getDaftarmail() {
+        return daftarmail.getText();
+    }
+
+    public String getDaftarnama() {
+        return daftarnama.getText();
+    }
+
+    public String getDaftarpass() {
+        return daftarpass.getText();
+    }
+
+    public String getNohp() {
+        return nohp.getText();
     }
 
     public void addActionListener(ActionListener a) {
@@ -214,7 +233,6 @@ public JButton getBtback(){
     private javax.swing.JTextField daftarmail;
     private javax.swing.JTextField daftarnama;
     private javax.swing.JPasswordField daftarpass;
-    private javax.swing.JFormattedTextField jFormattedTextField1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -227,5 +245,6 @@ public JButton getBtback(){
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
+    private javax.swing.JFormattedTextField nohp;
     // End of variables declaration//GEN-END:variables
 }

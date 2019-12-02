@@ -4,6 +4,8 @@ import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
 /**
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -159,6 +161,16 @@ public void addActionListener(ActionListener a){
         btnbacklogin.addActionListener(a);
         btmasuk.addActionListener(a);
     }
+
+    public String getLoginmail() {
+        return loginmail.getText();
+    }
+
+    public String getLoginpass() {
+        return loginpass.getText();
+    }
+
+    
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
