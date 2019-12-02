@@ -2,6 +2,8 @@ package View;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
 /**
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -36,12 +38,12 @@ public class galangdana extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        btnkembali = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         loginmail = new javax.swing.JTextField();
         jSeparator1 = new javax.swing.JSeparator();
-        bayar = new javax.swing.JButton();
+        galang = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
 
@@ -61,13 +63,13 @@ public class galangdana extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("Donasi");
+        jLabel5.setText("Galang Dana");
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/back_32px.png"))); // NOI18N
-        jButton1.setBorder(null);
-        jButton1.setBorderPainted(false);
-        jButton1.setContentAreaFilled(false);
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnkembali.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/back_32px.png"))); // NOI18N
+        btnkembali.setBorder(null);
+        btnkembali.setBorderPainted(false);
+        btnkembali.setContentAreaFilled(false);
+        btnkembali.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -75,7 +77,7 @@ public class galangdana extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnkembali, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 310, Short.MAX_VALUE)
@@ -85,7 +87,7 @@ public class galangdana extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnkembali, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel5)
                 .addContainerGap(15, Short.MAX_VALUE))
@@ -112,21 +114,21 @@ public class galangdana extends javax.swing.JFrame {
         jPanel1.add(loginmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 120, 180, 30));
         jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 150, 180, 10));
 
-        bayar.setBackground(new java.awt.Color(0, 0, 255));
-        bayar.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        bayar.setForeground(new java.awt.Color(255, 255, 255));
-        bayar.setText("Galang Dana");
-        bayar.setBorder(null);
-        bayar.setBorderPainted(false);
-        bayar.setContentAreaFilled(false);
-        bayar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        bayar.setOpaque(true);
-        bayar.addActionListener(new java.awt.event.ActionListener() {
+        galang.setBackground(new java.awt.Color(0, 0, 255));
+        galang.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        galang.setForeground(new java.awt.Color(255, 255, 255));
+        galang.setText("Galang Dana");
+        galang.setBorder(null);
+        galang.setBorderPainted(false);
+        galang.setContentAreaFilled(false);
+        galang.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        galang.setOpaque(true);
+        galang.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bayarActionPerformed(evt);
+                galangActionPerformed(evt);
             }
         });
-        jPanel1.add(bayar, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 340, 110, 30));
+        jPanel1.add(galang, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 340, 110, 30));
 
         jTextArea1.setColumns(20);
         jTextArea1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
@@ -139,57 +141,33 @@ public class galangdana extends javax.swing.JFrame {
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 320, 410));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void loginmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginmailActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_loginmailActionPerformed
 
-    private void bayarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bayarActionPerformed
+    private void galangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_galangActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_bayarActionPerformed
+    }//GEN-LAST:event_galangActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(galangdana.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(galangdana.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(galangdana.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(galangdana.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
+    public JButton getGalang() {
+        return galang;
+    }
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new galangdana().setVisible(true);
-            }
-        });
+    public JButton getBtnkembali() {
+        return btnkembali;
+    }
+    
+public void addActionListener(ActionListener a){
+        galang.addActionListener(a);
+
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton bayar;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnkembali;
+    private javax.swing.JButton galang;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;

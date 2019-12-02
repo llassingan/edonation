@@ -17,7 +17,7 @@ public class Database {
     
     private void connect(){
         try {
-            String url = "jdbc:mysql://localhost/perpus";
+            String url = "jdbc:mysql://localhost/edotensei";
             String user = "root";
             String pass = "";
             con = DriverManager.getConnection(url,user,pass);

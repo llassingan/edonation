@@ -197,81 +197,10 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="190" y="350" width="30" height="150"/>
+              <AbsoluteConstraints x="190" y="360" width="30" height="140"/>
             </Constraint>
           </Constraints>
         </Component>
-        <Container class="javax.swing.JPanel" name="jPanel1">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="66" red="0" type="rgb"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="30" y="350" width="150" height="40"/>
-            </Constraint>
-          </Constraints>
-
-          <Layout>
-            <DimensionLayout dim="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="0" pref="6" max="32767" attributes="0"/>
-                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="btnstarthelp1" min="-2" pref="102" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-            </DimensionLayout>
-            <DimensionLayout dim="1">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="btnstarthelp1" pref="18" max="32767" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                  </Group>
-                  <Component id="jLabel3" alignment="0" max="32767" attributes="0"/>
-              </Group>
-            </DimensionLayout>
-          </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JButton" name="btnstarthelp1">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Arial" size="14" style="0"/>
-                </Property>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Bantuan"/>
-                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                  <Border info="null"/>
-                </Property>
-                <Property name="borderPainted" type="boolean" value="false"/>
-                <Property name="contentAreaFilled" type="boolean" value="false"/>
-                <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                  <Color id="Hand Cursor"/>
-                </Property>
-                <Property name="horizontalAlignment" type="int" value="2"/>
-                <Property name="horizontalTextPosition" type="int" value="2"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnstarthelp1ActionPerformed"/>
-              </Events>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel3">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/View/help_32px.png"/>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
-        </Container>
         <Container class="javax.swing.JPanel" name="jPanel3">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -283,7 +212,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="30" y="400" width="150" height="40"/>
+              <AbsoluteConstraints x="30" y="380" width="150" height="40"/>
             </Constraint>
           </Constraints>
 
@@ -293,20 +222,21 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="12" max="32767" attributes="0"/>
-                      <Component id="btnstarthelp" min="-2" pref="102" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="btnfaq" min="-2" pref="102" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jLabel5" alignment="1" min="-2" pref="40" max="-2" attributes="0"/>
-                  <Component id="btnstarthelp" min="-2" pref="40" max="-2" attributes="0"/>
+                  <Component id="btnfaq" alignment="1" min="-2" pref="40" max="-2" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JButton" name="btnstarthelp">
+            <Component class="javax.swing.JButton" name="btnfaq">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Arial" size="14" style="0"/>
@@ -327,7 +257,7 @@
                 <Property name="horizontalTextPosition" type="int" value="2"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnstarthelpActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnfaqActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel5">
@@ -350,7 +280,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="30" y="450" width="150" height="-1"/>
+              <AbsoluteConstraints x="30" y="440" width="150" height="-1"/>
             </Constraint>
           </Constraints>
 
@@ -361,7 +291,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                       <EmptySpace pref="12" max="32767" attributes="0"/>
-                      <Component id="btnstarthelp2" min="-2" pref="102" max="-2" attributes="0"/>
+                      <Component id="btntentang" min="-2" pref="102" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -370,7 +300,7 @@
                   <Group type="102" alignment="1" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel6" alignment="0" min="-2" pref="36" max="-2" attributes="0"/>
-                          <Component id="btnstarthelp2" min="-2" pref="36" max="-2" attributes="0"/>
+                          <Component id="btntentang" min="-2" pref="36" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
@@ -378,7 +308,7 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JButton" name="btnstarthelp2">
+            <Component class="javax.swing.JButton" name="btntentang">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Arial" size="14" style="0"/>
@@ -399,7 +329,7 @@
                 <Property name="horizontalTextPosition" type="int" value="2"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnstarthelp2ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btntentangActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel6">

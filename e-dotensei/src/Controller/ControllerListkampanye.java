@@ -5,7 +5,7 @@
  */
 package Controller;
 
-import View.Register;
+import View.listkampanye;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -13,24 +13,24 @@ import java.awt.event.ActionListener;
  *
  * @author Angga
  */
-public class ControllerDaftar implements ActionListener {
-    private Register view;
-
-    public ControllerDaftar(){
-        view = new Register();
+public class ControllerListkampanye implements ActionListener {
+    private listkampanye view;
+    
+    public ControllerListkampanye(){
+        view = new listkampanye();
         view.addActionListener(this);
         view.setVisible(true);
     }
-  
+
     @Override
     public void actionPerformed(ActionEvent ae) {
-            Object s = ae.getSource();
-        if(s.equals(view.getBtback())){
-            new ControllerStart();
+        Object s = ae.getSource();
+        if(s.equals(view.getBtnkeluar())){
+            new ControllerHome();
             view.setVisible(false);
-        }else if(s.equals(view.getBtdaftar())){
-            new ControllerLogin();
+        }  else if(s.equals(view.getDonasi())){
+            new ControllerDonasi();
             view.setVisible(false);
-        }  
-    }
+        } 
+}
 }

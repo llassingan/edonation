@@ -42,14 +42,11 @@ public class StartScreen extends javax.swing.JFrame {
         jPanel5 = new javax.swing.JPanel();
         btnstartdaftar = new javax.swing.JButton();
         jSeparator2 = new javax.swing.JSeparator();
-        jPanel1 = new javax.swing.JPanel();
-        btnstarthelp1 = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
-        btnstarthelp = new javax.swing.JButton();
+        btnfaq = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
-        btnstarthelp2 = new javax.swing.JButton();
+        btntentang = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         jPanel11 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
@@ -135,64 +132,23 @@ public class StartScreen extends javax.swing.JFrame {
         jPanel2.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 380, 180, 100));
 
         jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        jPanel2.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 350, 30, 150));
-
-        jPanel1.setBackground(new java.awt.Color(0, 102, 255));
-        jPanel1.setForeground(new java.awt.Color(255, 255, 255));
-
-        btnstarthelp1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        btnstarthelp1.setForeground(new java.awt.Color(255, 255, 255));
-        btnstarthelp1.setText("Bantuan");
-        btnstarthelp1.setBorder(null);
-        btnstarthelp1.setBorderPainted(false);
-        btnstarthelp1.setContentAreaFilled(false);
-        btnstarthelp1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnstarthelp1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        btnstarthelp1.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
-        btnstarthelp1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnstarthelp1ActionPerformed(evt);
-            }
-        });
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/help_32px.png"))); // NOI18N
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(0, 6, Short.MAX_VALUE)
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnstarthelp1, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(btnstarthelp1, javax.swing.GroupLayout.DEFAULT_SIZE, 18, Short.MAX_VALUE)
-                .addContainerGap())
-            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-
-        jPanel2.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, 150, 40));
+        jPanel2.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 360, 30, 140));
 
         jPanel3.setBackground(new java.awt.Color(0, 102, 255));
         jPanel3.setForeground(new java.awt.Color(255, 255, 255));
 
-        btnstarthelp.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        btnstarthelp.setForeground(new java.awt.Color(255, 255, 255));
-        btnstarthelp.setText("FAQ");
-        btnstarthelp.setBorder(null);
-        btnstarthelp.setBorderPainted(false);
-        btnstarthelp.setContentAreaFilled(false);
-        btnstarthelp.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnstarthelp.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        btnstarthelp.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
-        btnstarthelp.addActionListener(new java.awt.event.ActionListener() {
+        btnfaq.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        btnfaq.setForeground(new java.awt.Color(255, 255, 255));
+        btnfaq.setText("FAQ");
+        btnfaq.setBorder(null);
+        btnfaq.setBorderPainted(false);
+        btnfaq.setContentAreaFilled(false);
+        btnfaq.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnfaq.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnfaq.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        btnfaq.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnstarthelpActionPerformed(evt);
+                btnfaqActionPerformed(evt);
             }
         });
 
@@ -205,32 +161,33 @@ public class StartScreen extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
-                .addComponent(btnstarthelp, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnfaq, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(btnstarthelp, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(btnfaq, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 400, 150, 40));
+        jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 380, 150, 40));
 
         jPanel4.setBackground(new java.awt.Color(0, 102, 255));
         jPanel4.setForeground(new java.awt.Color(255, 255, 255));
 
-        btnstarthelp2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        btnstarthelp2.setForeground(new java.awt.Color(255, 255, 255));
-        btnstarthelp2.setText("Tentang");
-        btnstarthelp2.setBorder(null);
-        btnstarthelp2.setBorderPainted(false);
-        btnstarthelp2.setContentAreaFilled(false);
-        btnstarthelp2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnstarthelp2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        btnstarthelp2.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
-        btnstarthelp2.addActionListener(new java.awt.event.ActionListener() {
+        btntentang.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        btntentang.setForeground(new java.awt.Color(255, 255, 255));
+        btntentang.setText("Tentang");
+        btntentang.setBorder(null);
+        btntentang.setBorderPainted(false);
+        btntentang.setContentAreaFilled(false);
+        btntentang.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btntentang.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btntentang.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        btntentang.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnstarthelp2ActionPerformed(evt);
+                btntentangActionPerformed(evt);
             }
         });
 
@@ -244,18 +201,18 @@ public class StartScreen extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
-                .addComponent(btnstarthelp2, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(btntentang, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnstarthelp2, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btntentang, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        jPanel2.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 450, 150, -1));
+        jPanel2.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 440, 150, -1));
 
         jPanel11.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -320,17 +277,13 @@ public class StartScreen extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnstartdaftarActionPerformed
 
-    private void btnstarthelpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnstarthelpActionPerformed
+    private void btnfaqActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnfaqActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnstarthelpActionPerformed
+    }//GEN-LAST:event_btnfaqActionPerformed
 
-    private void btnstarthelp1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnstarthelp1ActionPerformed
+    private void btntentangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btntentangActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnstarthelp1ActionPerformed
-
-    private void btnstarthelp2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnstarthelp2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnstarthelp2ActionPerformed
+    }//GEN-LAST:event_btntentangActionPerformed
 
     private void btnstartloginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnstartloginActionPerformed
         // TODO add your handling code here:
@@ -339,6 +292,9 @@ public class StartScreen extends javax.swing.JFrame {
 public void addActionListener(ActionListener a){
         btnstartlogin.addActionListener(a);
         btnstartdaftar.addActionListener(a);
+        btnfaq.addActionListener(a);
+        btntentang.addActionListener(a);
+        
     }
    public JButton getBtnBtnstartlogin(){
         return btnstartlogin;
@@ -347,26 +303,31 @@ public void addActionListener(ActionListener a){
    public JButton getBtnBtnstartdaftar(){
         return btnstartdaftar;
     }
+
+    public JButton getBtnfaq() {
+        return btnfaq;
+    }
+
+    public JButton getBtntentang() {
+        return btntentang;
+    }
     
     
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnfaq;
     private javax.swing.JButton btnstartdaftar;
-    private javax.swing.JButton btnstarthelp;
-    private javax.swing.JButton btnstarthelp1;
-    private javax.swing.JButton btnstarthelp2;
     private javax.swing.JButton btnstartlogin;
+    private javax.swing.JButton btntentang;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel2;

@@ -13,12 +13,31 @@ import java.awt.event.ActionListener;
  *
  * @author Angga
  */
-public class ControllerHome {//implements ActionListener {
+public class ControllerHome implements ActionListener {
     private Home view;
     
     public ControllerHome(){
         view = new Home();
-        //view.addActionListener(this);
+        view.addActionListener(this);
         view.setVisible(true);
     }
+
+    @Override
+    public void actionPerformed(ActionEvent ae) {
+        Object s = ae.getSource();
+        if(s.equals(view.getBtnprofil())){
+            new ControllerUserenv();
+            view.setVisible(false);
+        }else if(s.equals(view.getBtnkeluar())){
+            new ControllerLogin();
+            view.setVisible(false);
+        }else if(s.equals(view.getLihat()) || s.equals(view.getLihat1()) || s.equals(view.getLihat2()) ||s.equals(view.getLihatsemua())){
+            new ControllerListkampanye();
+            view.setVisible(false);
+        }else if(s.equals(view.getBtngalang())){
+            new ControllerGalangdana();
+            view.setVisible(false);
+        }
+    
+}
 }

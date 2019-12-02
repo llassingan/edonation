@@ -7,6 +7,8 @@ package View;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
 /**
  *
  * @author user
@@ -30,6 +32,8 @@ public class listkampanye extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel9 = new javax.swing.JPanel();
+        btnkeluar = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
@@ -51,6 +55,44 @@ public class listkampanye extends javax.swing.JFrame {
         setLocationByPlatform(true);
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel9.setBackground(new java.awt.Color(51, 51, 255));
+
+        btnkeluar.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        btnkeluar.setForeground(new java.awt.Color(255, 255, 255));
+        btnkeluar.setText("Kembali");
+        btnkeluar.setBorder(null);
+        btnkeluar.setBorderPainted(false);
+        btnkeluar.setContentAreaFilled(false);
+        btnkeluar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnkeluar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnkeluarActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
+        jPanel9.setLayout(jPanel9Layout);
+        jPanel9Layout.setHorizontalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 90, Short.MAX_VALUE)
+            .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel9Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(btnkeluar, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        jPanel9Layout.setVerticalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 30, Short.MAX_VALUE)
+            .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel9Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(btnkeluar)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        getContentPane().add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 20, -1, -1));
 
         jPanel2.setBackground(new java.awt.Color(51, 102, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -196,6 +238,11 @@ public class listkampanye extends javax.swing.JFrame {
         });
         tablelistkamp.setGridColor(new java.awt.Color(0, 51, 255));
         tablelistkamp.setOpaque(false);
+        tablelistkamp.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tablelistkampMouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(tablelistkamp);
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
@@ -223,45 +270,32 @@ public class listkampanye extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(listkampanye.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(listkampanye.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(listkampanye.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(listkampanye.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
+    private void btnkeluarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnkeluarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnkeluarActionPerformed
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new listkampanye().setVisible(true);
-            }
-        });
+    private void tablelistkampMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tablelistkampMouseClicked
+        judulkampanye.setText(tablelistkamp.getValueAt(tablelistkamp.getSelectedRow(), 0).toString());
+        deskripsi.setText(tablelistkamp.getValueAt(tablelistkamp.getSelectedRow(), 1).toString());
+        totaldonasi.setText(tablelistkamp.getValueAt(tablelistkamp.getSelectedRow(), 2).toString());
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tablelistkampMouseClicked
+
+    public JButton getBtnkeluar() {
+        return btnkeluar;
+    }
+
+    public JButton getDonasi() {
+        return donasi;
+    }
+
+public void addActionListener(ActionListener a){
+        btnkeluar.addActionListener(a);
+        donasi.addActionListener(a);
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnkeluar;
     private javax.swing.JTextArea deskripsi;
     private javax.swing.JButton donasi;
     private javax.swing.JLabel jLabel1;
@@ -270,6 +304,7 @@ public class listkampanye extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel jlabe;

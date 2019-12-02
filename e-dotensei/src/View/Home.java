@@ -7,6 +7,9 @@ package View;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
+import javax.swing.JLabel;
 /**
  *
  * @author user
@@ -32,23 +35,13 @@ public class Home extends javax.swing.JFrame {
 
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        btnbantuan = new javax.swing.JButton();
-        btntentang = new javax.swing.JButton();
+        btngalang = new javax.swing.JButton();
         btnprofil = new javax.swing.JButton();
         btnkeluar = new javax.swing.JButton();
         jSeparator6 = new javax.swing.JSeparator();
-        jSeparator1 = new javax.swing.JSeparator();
         jSeparator4 = new javax.swing.JSeparator();
         jSeparator5 = new javax.swing.JSeparator();
-        jPanel3 = new javax.swing.JPanel();
-        jTextField1 = new javax.swing.JTextField();
-        jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
-        jPanel11 = new javax.swing.JPanel();
-        buatkampanye = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
@@ -67,6 +60,7 @@ public class Home extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
+        lihatsemua = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocationByPlatform(true);
@@ -79,30 +73,21 @@ public class Home extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Calibri", 1, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("e-DOTENSEI");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 70, -1, -1));
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 100, -1, -1));
 
-        btnbantuan.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
-        btnbantuan.setForeground(new java.awt.Color(255, 255, 255));
-        btnbantuan.setText("Bantuan");
-        btnbantuan.setBorder(null);
-        btnbantuan.setBorderPainted(false);
-        btnbantuan.setContentAreaFilled(false);
-        btnbantuan.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel2.add(btnbantuan, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 20, 60, -1));
-
-        btntentang.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
-        btntentang.setForeground(new java.awt.Color(255, 255, 255));
-        btntentang.setText("Tentang");
-        btntentang.setBorder(null);
-        btntentang.setBorderPainted(false);
-        btntentang.setContentAreaFilled(false);
-        btntentang.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btntentang.addActionListener(new java.awt.event.ActionListener() {
+        btngalang.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        btngalang.setForeground(new java.awt.Color(255, 255, 255));
+        btngalang.setText("Galang Dana");
+        btngalang.setBorder(null);
+        btngalang.setBorderPainted(false);
+        btngalang.setContentAreaFilled(false);
+        btngalang.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btngalang.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btntentangActionPerformed(evt);
+                btngalangActionPerformed(evt);
             }
         });
-        jPanel2.add(btntentang, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 20, 70, -1));
+        jPanel2.add(btngalang, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 20, 80, -1));
 
         btnprofil.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         btnprofil.setForeground(new java.awt.Color(255, 255, 255));
@@ -116,7 +101,7 @@ public class Home extends javax.swing.JFrame {
                 btnprofilActionPerformed(evt);
             }
         });
-        jPanel2.add(btnprofil, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 20, 40, -1));
+        jPanel2.add(btnprofil, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 20, 40, -1));
 
         btnkeluar.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         btnkeluar.setForeground(new java.awt.Color(255, 255, 255));
@@ -132,116 +117,11 @@ public class Home extends javax.swing.JFrame {
         });
         jPanel2.add(btnkeluar, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 20, 70, -1));
         jPanel2.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 40, 50, 10));
-        jPanel2.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 40, 50, 10));
-        jPanel2.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 40, 40, 10));
-        jPanel2.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 40, 60, 10));
-
-        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
-
-        jTextField1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        jTextField1.setText("Mulai Kampanyemu Sekarang!");
-        jTextField1.setBorder(null);
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(34, 34, 34)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(28, Short.MAX_VALUE))
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-        );
-
-        jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 130, 230, 30));
-
-        jPanel1.setBackground(new java.awt.Color(51, 51, 255));
-
-        jButton1.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Galang Dana");
-        jButton1.setBorder(null);
-        jButton1.setBorderPainted(false);
-        jButton1.setContentAreaFilled(false);
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(0, 77, Short.MAX_VALUE)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-        );
-
-        jPanel2.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 130, 220, 30));
+        jPanel2.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 40, 40, 10));
+        jPanel2.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 40, 80, 10));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Untitled-1.jpg"))); // NOI18N
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 220));
-
-        jPanel4.setBackground(new java.awt.Color(51, 102, 255));
-
-        jLabel3.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("<html>  <p style=\"text-align:center;\">Ayo<br/>Donasi  <br/> Sekarang<p/> <html>"); // NOI18N
-        jLabel3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-
-        jPanel11.setBackground(new java.awt.Color(255, 255, 255));
-
-        buatkampanye.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/go_16px.png"))); // NOI18N
-        buatkampanye.setBorder(null);
-        buatkampanye.setBorderPainted(false);
-        buatkampanye.setContentAreaFilled(false);
-        buatkampanye.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
-        jPanel11.setLayout(jPanel11Layout);
-        jPanel11Layout.setHorizontalGroup(
-            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel11Layout.createSequentialGroup()
-                .addComponent(buatkampanye, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        jPanel11Layout.setVerticalGroup(
-            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(buatkampanye, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
-        );
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addComponent(jLabel3)
-                .addContainerGap())
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap(40, Short.MAX_VALUE)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(21, 21, 21))
-        );
-
-        jPanel2.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 290, 70, 200));
 
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -274,7 +154,7 @@ public class Home extends javax.swing.JFrame {
 
         jPanel5.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, -1, -1));
 
-        jPanel2.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 290, 190, 200));
+        jPanel2.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 290, 190, 200));
 
         jPanel6.setBackground(new java.awt.Color(255, 255, 255));
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -307,7 +187,7 @@ public class Home extends javax.swing.JFrame {
 
         jPanel6.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, -1, -1));
 
-        jPanel2.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 290, 190, 200));
+        jPanel2.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 290, 190, 200));
 
         jPanel7.setBackground(new java.awt.Color(255, 255, 255));
         jPanel7.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
@@ -341,7 +221,7 @@ public class Home extends javax.swing.JFrame {
 
         jPanel7.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, 150, 30));
 
-        jPanel2.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, 190, 200));
+        jPanel2.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 290, 190, 200));
 
         jLabel4.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel4.setText("Kampanye Untukmu");
@@ -349,15 +229,19 @@ public class Home extends javax.swing.JFrame {
         jPanel2.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, 70, -1));
         jPanel2.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 250, 620, 40));
 
+        lihatsemua.setForeground(new java.awt.Color(51, 51, 255));
+        lihatsemua.setText("Lihat Semua >>>");
+        lihatsemua.setBorder(null);
+        lihatsemua.setBorderPainted(false);
+        lihatsemua.setContentAreaFilled(false);
+        lihatsemua.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel2.add(lihatsemua, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 500, -1, -1));
+
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 860, 520));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btntentangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btntentangActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btntentangActionPerformed
 
     private void btnprofilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnprofilActionPerformed
         // TODO add your handling code here:
@@ -367,83 +251,80 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnkeluarActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btngalangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btngalangActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btngalangActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Home().setVisible(true);
-            }
-        });
+    public JButton getBtngalang() {
+        return btngalang;
     }
 
+    public JButton getBtnprofil() {
+        return btnprofil;
+    }
+
+    public JButton getLihat() {
+        return lihat;
+    }
+
+    public JButton getLihat1() {
+        return lihat1;
+    }
+
+    public JButton getLihat2() {
+        return lihat2;
+    }
+
+    public JButton getBtnkeluar() {
+        return btnkeluar;
+    }
+
+    public JButton getLihatsemua() {
+        return lihatsemua;
+    }
+
+
+
+public void addActionListener(ActionListener a){
+        btngalang.addActionListener(a);
+        btnprofil.addActionListener(a);
+        btnkeluar.addActionListener(a);
+        lihat.addActionListener(a);
+        lihat1.addActionListener(a);
+        lihat2.addActionListener(a);
+        lihatsemua.addActionListener(a);     
+}
+
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnbantuan;
+    private javax.swing.JButton btngalang;
     private javax.swing.JButton btnkeluar;
     private javax.swing.JButton btnprofil;
-    private javax.swing.JButton btntentang;
-    private javax.swing.JButton buatkampanye;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
-    private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
-    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator6;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JButton lihat;
     private javax.swing.JButton lihat1;
     private javax.swing.JButton lihat2;
+    private javax.swing.JButton lihatsemua;
     // End of variables declaration//GEN-END:variables
 
     private void setLocation(Dimension dim, int i, int i0) {

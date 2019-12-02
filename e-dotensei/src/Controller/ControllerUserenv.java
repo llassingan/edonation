@@ -5,7 +5,7 @@
  */
 package Controller;
 
-import View.Register;
+import View.userenv;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -13,11 +13,11 @@ import java.awt.event.ActionListener;
  *
  * @author Angga
  */
-public class ControllerDaftar implements ActionListener {
-    private Register view;
+public class ControllerUserenv implements ActionListener {
+    private userenv view;
 
-    public ControllerDaftar(){
-        view = new Register();
+    public ControllerUserenv(){
+        view = new userenv();
         view.addActionListener(this);
         view.setVisible(true);
     }
@@ -25,11 +25,11 @@ public class ControllerDaftar implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent ae) {
             Object s = ae.getSource();
-        if(s.equals(view.getBtback())){
-            new ControllerStart();
-            view.setVisible(false);
-        }else if(s.equals(view.getBtdaftar())){
-            new ControllerLogin();
+        if(s.equals(view.getBtngantipass())){
+//            new ControllerStart();
+//            view.setVisible(false);
+        }else if(s.equals(view.getBtnkeluar())){
+            new ControllerHome();
             view.setVisible(false);
         }  
     }

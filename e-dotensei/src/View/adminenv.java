@@ -30,6 +30,8 @@ public class adminenv extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel9 = new javax.swing.JPanel();
+        btnkeluar = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel12 = new javax.swing.JPanel();
@@ -79,6 +81,44 @@ public class adminenv extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jPanel9.setBackground(new java.awt.Color(51, 51, 255));
+
+        btnkeluar.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        btnkeluar.setForeground(new java.awt.Color(255, 255, 255));
+        btnkeluar.setText("Kembali");
+        btnkeluar.setBorder(null);
+        btnkeluar.setBorderPainted(false);
+        btnkeluar.setContentAreaFilled(false);
+        btnkeluar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnkeluar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnkeluarActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
+        jPanel9.setLayout(jPanel9Layout);
+        jPanel9Layout.setHorizontalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 90, Short.MAX_VALUE)
+            .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel9Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(btnkeluar, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        jPanel9Layout.setVerticalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 30, Short.MAX_VALUE)
+            .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel9Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(btnkeluar)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        getContentPane().add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 20, -1, -1));
+
         jPanel2.setBackground(new java.awt.Color(51, 102, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -112,6 +152,11 @@ public class adminenv extends javax.swing.JFrame {
         });
         table.setGridColor(new java.awt.Color(0, 51, 255));
         table.setOpaque(false);
+        table.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tableMouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(table);
 
         judulkampanye.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
@@ -513,6 +558,18 @@ public class adminenv extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btngantipassadminActionPerformed
 
+    private void btnkeluarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnkeluarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnkeluarActionPerformed
+
+    private void tableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tableMouseClicked
+        judulkampanye2.setText(table.getValueAt(table.getSelectedRow(), 0).toString());
+        deskripsi.setText(table.getValueAt(table.getSelectedRow(), 1).toString());
+        tglkampanye1.setText(table.getValueAt(table.getSelectedRow(), 2).toString());
+        totaldonasi.setText(table.getValueAt(table.getSelectedRow(), 3).toString());
+        auth.setText(table.getValueAt(table.getSelectedRow(), 4).toString());// TODO add your handling code here:
+    }//GEN-LAST:event_tableMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -555,6 +612,7 @@ public class adminenv extends javax.swing.JFrame {
     private javax.swing.JLabel auth;
     private javax.swing.JButton btngantipassadmin;
     private javax.swing.JButton btnhapus;
+    private javax.swing.JButton btnkeluar;
     private javax.swing.JButton btnupdate;
     private javax.swing.JTextArea deskripsi;
     private javax.swing.JLabel emailadmin;
@@ -576,6 +634,7 @@ public class adminenv extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;

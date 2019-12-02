@@ -5,7 +5,7 @@
  */
 package Controller;
 
-import View.Register;
+import View.tentang;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -13,24 +13,21 @@ import java.awt.event.ActionListener;
  *
  * @author Angga
  */
-public class ControllerDaftar implements ActionListener {
-    private Register view;
+public class ControllerTentang implements ActionListener {
+    private tentang view;
 
-    public ControllerDaftar(){
-        view = new Register();
+    public ControllerTentang(){
+        view = new tentang();
         view.addActionListener(this);
         view.setVisible(true);
     }
-  
+
     @Override
     public void actionPerformed(ActionEvent ae) {
             Object s = ae.getSource();
-        if(s.equals(view.getBtback())){
+        if(s.equals(view.getBakc())){
             new ControllerStart();
             view.setVisible(false);
-        }else if(s.equals(view.getBtdaftar())){
-            new ControllerLogin();
-            view.setVisible(false);
-        }  
+        }
     }
 }

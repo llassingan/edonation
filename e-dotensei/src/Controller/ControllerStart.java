@@ -20,11 +20,6 @@ public class ControllerStart implements ActionListener {
     public ControllerStart(){
         view = new StartScreen();
         view.addActionListener(this);
-        try{
-            Thread.sleep(5000);
-        }catch(Exception e){
-            
-        }
         view.setVisible(true);
     }
 
@@ -36,6 +31,12 @@ public class ControllerStart implements ActionListener {
             view.setVisible(false);
         }else if(s.equals(view.getBtnBtnstartdaftar())){
             new ControllerDaftar();
+            view.setVisible(false);
+        }else if(s.equals(view.getBtnfaq())){
+            new Controllerfaq();
+            view.setVisible(false);
+        }else if(s.equals(view.getBtntentang())){
+            new ControllerTentang();
             view.setVisible(false);
         }
     }

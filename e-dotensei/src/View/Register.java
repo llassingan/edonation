@@ -2,6 +2,8 @@ package View;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
 /**
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -37,7 +39,7 @@ public class Register extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        btback = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         daftarmail = new javax.swing.JTextField();
@@ -72,11 +74,11 @@ public class Register extends javax.swing.JFrame {
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("Pendaftaran");
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/back_32px.png"))); // NOI18N
-        jButton1.setBorder(null);
-        jButton1.setBorderPainted(false);
-        jButton1.setContentAreaFilled(false);
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btback.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/back_32px.png"))); // NOI18N
+        btback.setBorder(null);
+        btback.setBorderPainted(false);
+        btback.setContentAreaFilled(false);
+        btback.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -90,14 +92,14 @@ public class Register extends javax.swing.JFrame {
                 .addGap(123, 123, 123))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btback, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(9, 9, 9)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btback, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -190,48 +192,28 @@ public class Register extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jFormattedTextField1ActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Register.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Register.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Register.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Register.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
+    
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Register().setVisible(true);
-            }
-        });
+public JButton getBtback(){
+        return btback;
     }
 
+    public JButton getBtdaftar() {    
+        return btdaftar;
+    }
+
+    public void addActionListener(ActionListener a) {
+        btback.addActionListener(a);
+        btdaftar.addActionListener(a);
+    }
+
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btback;
     private javax.swing.JButton btdaftar;
     private javax.swing.JTextField daftarmail;
     private javax.swing.JTextField daftarnama;
     private javax.swing.JPasswordField daftarpass;
-    private javax.swing.JButton jButton1;
     private javax.swing.JFormattedTextField jFormattedTextField1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
