@@ -85,7 +85,7 @@ public class adminenv extends javax.swing.JFrame {
 
         btnkeluar.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         btnkeluar.setForeground(new java.awt.Color(255, 255, 255));
-        btnkeluar.setText("Kembali");
+        btnkeluar.setText("Keluar");
         btnkeluar.setBorder(null);
         btnkeluar.setBorderPainted(false);
         btnkeluar.setContentAreaFilled(false);

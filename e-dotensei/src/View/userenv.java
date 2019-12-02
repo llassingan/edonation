@@ -9,17 +9,34 @@ import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
+import javax.swing.JTable;
+import java.sql.*;
 /**
  *
  * @author user
  */
 public class userenv extends javax.swing.JFrame {
-
+    private Connection con = null;
+    private Statement stmt = null;
+    private ResultSet rs = null;
+    
+    void connect(){
+        try {
+            String url = "jdbc:mysql://localhost/edotensei";
+            String user = "root";
+            String pass = "";
+            con = DriverManager.getConnection(url,user,pass);
+            stmt = con.createStatement();
+        }catch(SQLException e){
+               e.printStackTrace();
+        }
+    }
     /**
      * Creates new form Home
      */
     public userenv() {
         initComponents();
+        
     }
 
     /**
@@ -330,7 +347,7 @@ public class userenv extends javax.swing.JFrame {
 
         namauser.setFont(new java.awt.Font("Arial Black", 0, 24)); // NOI18N
         namauser.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        namauser.setText("NAMA");
+        namauser.setText("ANGGA");
 
         jlabel.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jlabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -338,11 +355,11 @@ public class userenv extends javax.swing.JFrame {
 
         no_hpprof.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         no_hpprof.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        no_hpprof.setText("NOMOR HP");
+        no_hpprof.setText("0812345678");
 
         emailprof.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         emailprof.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        emailprof.setText("EMAIL");
+        emailprof.setText("angga@mail.com");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -412,6 +429,10 @@ public class userenv extends javax.swing.JFrame {
 
     public JButton getBtnkeluar() {
         return btnkeluar;
+    }
+
+    public JTable getTable() {
+        return table;
     }
 
 public void addActionListener(ActionListener a){

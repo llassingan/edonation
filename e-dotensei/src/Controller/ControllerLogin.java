@@ -32,7 +32,12 @@ public class ControllerLogin implements ActionListener {
             new ControllerStart();
             view.setVisible(false);
         }else if(s.equals(view.getBtmasuk())){
-            String mail = view.getLoginmail();
+            if(view.getLoginmail().equals("admin@mail.com") && view.getLoginpass().equals("12345")){
+                new ControllerAdminenv();
+            }
+               
+                    
+                    String mail = view.getLoginmail();
             String pass =  view.getLoginpass();
             db.loginuser(mail, pass);
             new ControllerHome();

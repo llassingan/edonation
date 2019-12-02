@@ -13,15 +13,13 @@ import java.awt.event.ActionListener;
  *
  * @author Angga
  */
-public class ControllerUserenv implements ActionListener {
+public class ControllerAdminenv implements ActionListener {
     private userenv view;
 
-    public ControllerUserenv(){
+    public ControllerAdminenv(){
         view = new userenv();
         view.addActionListener(this);
         view.setVisible(true);
-        
-        
     }
   
     @Override
