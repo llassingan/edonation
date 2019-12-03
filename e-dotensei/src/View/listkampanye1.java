@@ -13,12 +13,12 @@ import javax.swing.JButton;
  *
  * @author user
  */
-public class listkampanye extends javax.swing.JFrame {
+public class listkampanye1 extends javax.swing.JFrame {
 
     /**
      * Creates new form Home
      */
-    public listkampanye() {
+    public listkampanye1() {
         initComponents();
         //this.setBackground(new Color(0,0,0,0));
     }
@@ -220,7 +220,7 @@ public class listkampanye extends javax.swing.JFrame {
             new Object [][] {
                 {"Bantu Keluarga Cemara", "Keluarga cemara adalah keluarga miskin. mereka butuh bantuanmu",  new Long(1230000), "random1"},
                 {"Bantu Anak Pintar", "anak anak di desa sukajadi,pintar namun butuh bantuanmu.",  new Long(3200000), "random2"},
-                {"Bojongsoang Bersuka", "keluarga kita di bojongsoang sedang kesusahan. ulurkan tanganmu untuk mereka",  new Long(9150000), "random3"},
+                {"Bojongsoang Bersuka", "keluarga kita di bojongsoang sedang kesusahan. ulurkan tanganmu untuk mereka",  new Long(10150000), "random3"},
                 {null, null, null, null},
                 {null, null, null, null},
                 {null, null, null, null},

@@ -15,7 +15,7 @@ import java.sql.*;
  *
  * @author user
  */
-public class userenv extends javax.swing.JFrame {
+public class userenv1 extends javax.swing.JFrame {
     private Connection con = null;
     private Statement stmt = null;
     private ResultSet rs = null;
@@ -34,7 +34,7 @@ public class userenv extends javax.swing.JFrame {
     /**
      * Creates new form Home
      */
-    public userenv() {
+    public userenv1() {
         initComponents();
         
     }
@@ -116,9 +116,9 @@ public class userenv extends javax.swing.JFrame {
             .addGap(0, 30, Short.MAX_VALUE)
             .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel9Layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addGap(0, 6, Short.MAX_VALUE)
                     .addComponent(btnkeluar)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+                    .addGap(0, 7, Short.MAX_VALUE)))
         );
 
         getContentPane().add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 20, -1, -1));
@@ -137,7 +137,7 @@ public class userenv extends javax.swing.JFrame {
         table.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         table.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"", "", "", null},
+                {"Bantu dapet nilai", "kami butuh bantuan anda", "03/12/2019",  new Long(0)},
                 {null, null, null, null},
                 {null, null, null, null},
                 {null, null, null, null}

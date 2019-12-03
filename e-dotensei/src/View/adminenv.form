@@ -46,7 +46,7 @@
               <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Component id="btnkeluar" min="-2" pref="70" max="-2" attributes="0"/>
+                      <Component id="btnkeluaradm" min="-2" pref="70" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -58,7 +58,7 @@
               <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Component id="btnkeluar" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnkeluaradm" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -66,7 +66,7 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="btnkeluar">
+        <Component class="javax.swing.JButton" name="btnkeluaradm">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Calibri" size="14" style="1"/>
@@ -85,7 +85,7 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnkeluarActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnkeluaradmActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
@@ -217,34 +217,34 @@
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                           <Table columnCount="5" rowCount="4">
                             <Column editable="true" title="Judul" type="java.lang.String">
-                              <Data value="DONASI UANG"/>
-                              <Data value="null"/>
-                              <Data value="null"/>
-                              <Data value="null"/>
+                              <Data value="Bantu Keluarga Cemara"/>
+                              <Data value="Bantu Anak Pintar"/>
+                              <Data value="Bojongsoang Bersuka"/>
+                              <Data value="Bantu dapet nilai"/>
                             </Column>
                             <Column editable="true" title="Deskripsi" type="java.lang.String">
-                              <Data value="INI ADALAH BLAH BLAH  BLAH BLAH BLAH BLAH BLAH BLAH BLAH"/>
-                              <Data value="null"/>
-                              <Data value="null"/>
-                              <Data value="null"/>
+                              <Data value="Keluarga cemara adalah keluarga miskin. mereka butuh bantuanmu "/>
+                              <Data value="anak anak di desa sukajadi,pintar namun butuh bantuanmu. "/>
+                              <Data value="keluarga kita di bojongsoang sedang kesusahan. ulurkan tanganmu untuk mereka "/>
+                              <Data value="kami butuh bantuan anda"/>
                             </Column>
                             <Column editable="true" title="Tanggal" type="java.lang.String">
-                              <Data value="12/09/2019"/>
-                              <Data value="null"/>
-                              <Data value="null"/>
-                              <Data value="null"/>
+                              <Data value="02/12/2019"/>
+                              <Data value="02/12/2019"/>
+                              <Data value="02/12/2019"/>
+                              <Data value="03/12/2019"/>
                             </Column>
                             <Column editable="true" title="Total Donasi" type="java.lang.Long">
                               <Data value="1230000"/>
-                              <Data value="null"/>
-                              <Data value="null"/>
-                              <Data value="null"/>
+                              <Data value="3200000"/>
+                              <Data value="10150000"/>
+                              <Data value="0"/>
                             </Column>
                             <Column editable="true" title="Author" type="java.lang.String">
-                              <Data value="adnan"/>
-                              <Data value="null"/>
-                              <Data value="null"/>
-                              <Data value="null"/>
+                              <Data value="random1"/>
+                              <Data value="random2"/>
+                              <Data value="random3"/>
+                              <Data value="angga"/>
                             </Column>
                           </Table>
                         </Property>
@@ -473,20 +473,29 @@
                     <Component class="javax.swing.JTable" name="tabeluser">
                       <Properties>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                          <Table columnCount="4" rowCount="4">
-                            <Column editable="true" title="Id" type="java.lang.Object"/>
-                            <Column editable="true" title="Nama" type="java.lang.String"/>
-                            <Column editable="true" title="Email" type="java.lang.String"/>
-                            <Column editable="true" title="No.HP" type="java.lang.String"/>
+                          <Table columnCount="3" rowCount="4">
+                            <Column editable="true" title="Nama" type="java.lang.String">
+                              <Data value="random1"/>
+                              <Data value="random2"/>
+                              <Data value="random3"/>
+                              <Data value="angga"/>
+                            </Column>
+                            <Column editable="true" title="Email" type="java.lang.String">
+                              <Data value="qw"/>
+                              <Data value="qwe"/>
+                              <Data value="qwer"/>
+                              <Data value="angga@mail.com"/>
+                            </Column>
+                            <Column editable="true" title="No.HP" type="java.lang.String">
+                              <Data value="12"/>
+                              <Data value="123"/>
+                              <Data value="1234"/>
+                              <Data value="0812345678"/>
+                            </Column>
                           </Table>
                         </Property>
                         <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
                           <TableColumnModel selectionModel="0">
-                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                              <Title/>
-                              <Editor/>
-                              <Renderer/>
-                            </Column>
                             <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
                               <Title/>
                               <Editor/>
@@ -880,7 +889,7 @@
                   <Font name="Arial Black" size="24" style="0"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="0"/>
-                <Property name="text" type="java.lang.String" value="NAMA"/>
+                <Property name="text" type="java.lang.String" value="admin1"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="no_hpadmin">
@@ -889,7 +898,7 @@
                   <Font name="Arial" size="14" style="0"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="0"/>
-                <Property name="text" type="java.lang.String" value="NOMOR HP"/>
+                <Property name="text" type="java.lang.String" value="0812345678"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="emailadmin">
@@ -898,7 +907,7 @@
                   <Font name="Arial" size="14" style="0"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="0"/>
-                <Property name="text" type="java.lang.String" value="EMAIL"/>
+                <Property name="text" type="java.lang.String" value="admin1@admin.com"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JSeparator" name="jSeparator2">

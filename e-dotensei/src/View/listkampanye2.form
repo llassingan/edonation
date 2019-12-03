@@ -376,7 +376,7 @@
                           <Data value="Bantu Keluarga Cemara"/>
                           <Data value="Bantu Anak Pintar"/>
                           <Data value="Bojongsoang Bersuka"/>
-                          <Data value="null"/>
+                          <Data value="Bantu dapet nilai"/>
                           <Data value="null"/>
                           <Data value="null"/>
                           <Data value="null"/>
@@ -394,7 +394,7 @@
                           <Data value="Keluarga cemara adalah keluarga miskin. mereka butuh bantuanmu"/>
                           <Data value="anak anak di desa sukajadi,pintar namun butuh bantuanmu."/>
                           <Data value="keluarga kita di bojongsoang sedang kesusahan. ulurkan tanganmu untuk mereka"/>
-                          <Data value="null"/>
+                          <Data value="kami butuh bantuan anda"/>
                           <Data value="null"/>
                           <Data value="null"/>
                           <Data value="null"/>
@@ -411,8 +411,8 @@
                         <Column editable="true" title="Total Donasi" type="java.lang.Long">
                           <Data value="1230000"/>
                           <Data value="3200000"/>
-                          <Data value="9150000"/>
-                          <Data value="null"/>
+                          <Data value="10150000"/>
+                          <Data value="0"/>
                           <Data value="null"/>
                           <Data value="null"/>
                           <Data value="null"/>
@@ -430,7 +430,7 @@
                           <Data value="random1"/>
                           <Data value="random2"/>
                           <Data value="random3"/>
-                          <Data value="null"/>
+                          <Data value="angga"/>
                           <Data value="null"/>
                           <Data value="null"/>
                           <Data value="null"/>

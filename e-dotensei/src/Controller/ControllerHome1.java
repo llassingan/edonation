@@ -5,8 +5,7 @@
  */
 package Controller;
 
-import View.galangdana;
-import View.userenv;
+import View.Home;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -14,11 +13,11 @@ import java.awt.event.ActionListener;
  *
  * @author Angga
  */
-public class ControllerGalangdana implements ActionListener {
-    private galangdana view;
+public class ControllerHome1 implements ActionListener {
+    private Home view;
     
-    public ControllerGalangdana(){
-        view = new galangdana();
+    public ControllerHome1(){
+        view = new Home();
         view.addActionListener(this);
         view.setVisible(true);
     }
@@ -26,12 +25,19 @@ public class ControllerGalangdana implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent ae) {
         Object s = ae.getSource();
-        if(s.equals(view.getGalang())){
+        if(s.equals(view.getBtnprofil())){
+            new ControllerUserenv1();
+            view.setVisible(false);
+        }else if(s.equals(view.getBtnkeluar())){
+            new ControllerLogin();
+            view.setVisible(false);
+        }else if(s.equals(view.getLihat()) || s.equals(view.getLihat1()) || s.equals(view.getLihat2()) ||s.equals(view.getLihatsemua())){
             new ControllerListkampanye2();
             view.setVisible(false);
-        }else if(s.equals(view.getBtnkembali())){
-            new ControllerHome1();
+        }else if(s.equals(view.getBtngalang())){
+            new ControllerGalangdana();
             view.setVisible(false);
         }
+    
 }
 }

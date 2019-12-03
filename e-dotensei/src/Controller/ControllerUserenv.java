@@ -8,6 +8,7 @@ package Controller;
 import View.userenv;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.*;
 
 /**
  *
@@ -15,13 +16,11 @@ import java.awt.event.ActionListener;
  */
 public class ControllerUserenv implements ActionListener {
     private userenv view;
-
+    
     public ControllerUserenv(){
         view = new userenv();
         view.addActionListener(this);
-        view.setVisible(true);
-        
-        
+        view.setVisible(true);   
     }
   
     @Override

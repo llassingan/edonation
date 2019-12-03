@@ -7,6 +7,8 @@ package View;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
 /**
  *
  * @author user
@@ -31,7 +33,7 @@ public class adminenv extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel9 = new javax.swing.JPanel();
-        btnkeluar = new javax.swing.JButton();
+        btnkeluaradm = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel12 = new javax.swing.JPanel();
@@ -83,16 +85,16 @@ public class adminenv extends javax.swing.JFrame {
 
         jPanel9.setBackground(new java.awt.Color(51, 51, 255));
 
-        btnkeluar.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
-        btnkeluar.setForeground(new java.awt.Color(255, 255, 255));
-        btnkeluar.setText("Keluar");
-        btnkeluar.setBorder(null);
-        btnkeluar.setBorderPainted(false);
-        btnkeluar.setContentAreaFilled(false);
-        btnkeluar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnkeluar.addActionListener(new java.awt.event.ActionListener() {
+        btnkeluaradm.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        btnkeluaradm.setForeground(new java.awt.Color(255, 255, 255));
+        btnkeluaradm.setText("Keluar");
+        btnkeluaradm.setBorder(null);
+        btnkeluaradm.setBorderPainted(false);
+        btnkeluaradm.setContentAreaFilled(false);
+        btnkeluaradm.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnkeluaradm.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnkeluarActionPerformed(evt);
+                btnkeluaradmActionPerformed(evt);
             }
         });
 
@@ -104,7 +106,7 @@ public class adminenv extends javax.swing.JFrame {
             .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel9Layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(btnkeluar, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnkeluaradm, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
         jPanel9Layout.setVerticalGroup(
@@ -113,7 +115,7 @@ public class adminenv extends javax.swing.JFrame {
             .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel9Layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(btnkeluar)
+                    .addComponent(btnkeluaradm)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
@@ -133,10 +135,10 @@ public class adminenv extends javax.swing.JFrame {
         table.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         table.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"DONASI UANG", "INI ADALAH BLAH BLAH  BLAH BLAH BLAH BLAH BLAH BLAH BLAH", "12/09/2019",  new Long(1230000), "adnan"},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
+                {"Bantu Keluarga Cemara", "Keluarga cemara adalah keluarga miskin. mereka butuh bantuanmu ", "02/12/2019",  new Long(1230000), "random1"},
+                {"Bantu Anak Pintar", "anak anak di desa sukajadi,pintar namun butuh bantuanmu. ", "02/12/2019",  new Long(3200000), "random2"},
+                {"Bojongsoang Bersuka", "keluarga kita di bojongsoang sedang kesusahan. ulurkan tanganmu untuk mereka ", "02/12/2019",  new Long(10150000), "random3"},
+                {"Bantu dapet nilai", "kami butuh bantuan anda", "03/12/2019",  new Long(0), "angga"}
             },
             new String [] {
                 "Judul", "Deskripsi", "Tanggal", "Total Donasi", "Author"
@@ -246,17 +248,17 @@ public class adminenv extends javax.swing.JFrame {
 
         tabeluser.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {"random1", "qw", "12"},
+                {"random2", "qwe", "123"},
+                {"random3", "qwer", "1234"},
+                {"angga", "angga@mail.com", "0812345678"}
             },
             new String [] {
-                "Id", "Nama", "Email", "No.HP"
+                "Nama", "Email", "No.HP"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.Object.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+                java.lang.String.class, java.lang.String.class, java.lang.String.class
             };
 
             public Class getColumnClass(int columnIndex) {
@@ -491,15 +493,15 @@ public class adminenv extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Arial Black", 0, 24)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("NAMA");
+        jLabel3.setText("admin1");
 
         no_hpadmin.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         no_hpadmin.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        no_hpadmin.setText("NOMOR HP");
+        no_hpadmin.setText("0812345678");
 
         emailadmin.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         emailadmin.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        emailadmin.setText("EMAIL");
+        emailadmin.setText("admin1@admin.com");
 
         jLabel9.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -558,9 +560,9 @@ public class adminenv extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btngantipassadminActionPerformed
 
-    private void btnkeluarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnkeluarActionPerformed
+    private void btnkeluaradmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnkeluaradmActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnkeluarActionPerformed
+    }//GEN-LAST:event_btnkeluaradmActionPerformed
 
     private void tableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tableMouseClicked
         judulkampanye2.setText(table.getValueAt(table.getSelectedRow(), 0).toString());
@@ -570,49 +572,19 @@ public class adminenv extends javax.swing.JFrame {
         auth.setText(table.getValueAt(table.getSelectedRow(), 4).toString());// TODO add your handling code here:
     }//GEN-LAST:event_tableMouseClicked
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(adminenv.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(adminenv.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(adminenv.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(adminenv.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new adminenv().setVisible(true);
-            }
-        });
+    public JButton getBtnkeluaradm() {
+        return btnkeluaradm;
     }
+public void addActionListener(ActionListener a){
+        btnkeluaradm.addActionListener(a);
+}
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel auth;
     private javax.swing.JButton btngantipassadmin;
     private javax.swing.JButton btnhapus;
-    private javax.swing.JButton btnkeluar;
+    private javax.swing.JButton btnkeluaradm;
     private javax.swing.JButton btnupdate;
     private javax.swing.JTextArea deskripsi;
     private javax.swing.JLabel emailadmin;

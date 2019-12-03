@@ -26,7 +26,7 @@ public class ControllerBayar implements ActionListener {
     public void actionPerformed(ActionEvent ae) {
             Object s = ae.getSource();
         if(s.equals(view.getBayar())){
-            new ControllerListkampanye();
+            new ControllerListkampanye1();
             view.setVisible(false);
         }
     }

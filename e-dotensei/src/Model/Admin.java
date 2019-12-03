@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Model;
 
 import java.util.ArrayList;
@@ -27,7 +22,17 @@ public class Admin extends Account{
         return campaigns;
     }
     
-    public void deleteUser(ArrayList<User> users,User u){
+    public void deleteUser(User[] users,User u){
         
     }
+    
+    public void addUsers(User[] users){
+        User u = new User("Hadi","089567893414","hadi2@email.com","hadixxx");
+        int i = 0;
+        while (i<10) {
+            users[i] = u;
+            i++;
+        }
+    }
+    
 }

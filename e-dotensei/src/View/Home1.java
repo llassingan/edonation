@@ -14,12 +14,12 @@ import javax.swing.JLabel;
  *
  * @author user
  */
-public class Home extends javax.swing.JFrame {
+public class Home1 extends javax.swing.JFrame {
 
     /**
      * Creates new form Home
      */
-    public Home() {
+    public Home1() {
         initComponents();
         //this.setBackground(new Color(0,0,0,0));
     }
