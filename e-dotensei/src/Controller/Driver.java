@@ -3,19 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package e.dotensei;
+package Controller;
 
 /**
  *
- * @author user
+ * @author Angga
  */
-public class EDotensei {
-
-    /**
-     * @param args the command line arguments
-     */
+public class Driver {
     public static void main(String[] args) {
-        // TODO code application logic here
+        try{
+            Thread.sleep(5000);
+        }catch(Exception e){
+            
+        }
+        new ControllerStart();
     }
-    
 }
