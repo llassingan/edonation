@@ -220,7 +220,7 @@
                               <Data value="Bantu Keluarga Cemara"/>
                               <Data value="Bantu Anak Pintar"/>
                               <Data value="Bojongsoang Bersuka"/>
-                              <Data value="Bantu dapet nilai"/>
+                              <Data value="Bantu dapat nilai"/>
                             </Column>
                             <Column editable="true" title="Deskripsi" type="java.lang.String">
                               <Data value="Keluarga cemara adalah keluarga miskin. mereka butuh bantuanmu "/>
@@ -648,33 +648,20 @@
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="1" attributes="0">
+                              <Component id="baru" min="-2" pref="345" max="-2" attributes="0"/>
                               <Group type="102" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jPanel5" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                                      </Group>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
-                                      <Component id="passbaru" min="-2" pref="344" max="-2" attributes="0"/>
-                                  </Group>
+                                  <EmptySpace min="-2" pref="227" max="-2" attributes="0"/>
                               </Group>
+                              <Component id="jPanel5" min="-2" max="-2" attributes="0"/>
+                              <Component id="lama" min="-2" pref="345" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace pref="120" max="32767" attributes="0"/>
-                      </Group>
-                      <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
-                              <Component id="passlama" min="-2" pref="344" max="-2" attributes="0"/>
-                              <EmptySpace pref="121" max="32767" attributes="0"/>
-                          </Group>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -683,20 +670,15 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
                           <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="81" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="lama" min="-2" pref="36" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                           <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="passbaru" min="-2" pref="35" max="-2" attributes="0"/>
-                          <EmptySpace pref="47" max="32767" attributes="0"/>
+                          <Component id="baru" min="-2" pref="36" max="-2" attributes="0"/>
+                          <EmptySpace pref="46" max="32767" attributes="0"/>
                           <Component id="jPanel5" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
-                              <Component id="passlama" min="-2" pref="35" max="-2" attributes="0"/>
-                              <EmptySpace pref="251" max="32767" attributes="0"/>
-                          </Group>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -710,8 +692,6 @@
                     <Property name="text" type="java.lang.String" value="Password Lama"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="passbaru">
-                </Component>
                 <Component class="javax.swing.JLabel" name="jLabel8">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -719,8 +699,6 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Password Baru"/>
                   </Properties>
-                </Component>
-                <Component class="javax.swing.JTextField" name="passlama">
                 </Component>
                 <Container class="javax.swing.JPanel" name="jPanel5">
                   <Properties>
@@ -763,6 +741,10 @@
                     </Component>
                   </SubComponents>
                 </Container>
+                <Component class="javax.swing.JPasswordField" name="lama">
+                </Component>
+                <Component class="javax.swing.JPasswordField" name="baru">
+                </Component>
               </SubComponents>
             </Container>
           </SubComponents>

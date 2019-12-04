@@ -62,11 +62,11 @@ public class adminenv extends javax.swing.JFrame {
         btnhapus = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
-        passbaru = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
-        passlama = new javax.swing.JTextField();
         jPanel5 = new javax.swing.JPanel();
         btngantipassadmin = new javax.swing.JButton();
+        lama = new javax.swing.JPasswordField();
+        baru = new javax.swing.JPasswordField();
         jLabel1 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
@@ -138,7 +138,7 @@ public class adminenv extends javax.swing.JFrame {
                 {"Bantu Keluarga Cemara", "Keluarga cemara adalah keluarga miskin. mereka butuh bantuanmu ", "02/12/2019",  new Long(1230000), "random1"},
                 {"Bantu Anak Pintar", "anak anak di desa sukajadi,pintar namun butuh bantuanmu. ", "02/12/2019",  new Long(3200000), "random2"},
                 {"Bojongsoang Bersuka", "keluarga kita di bojongsoang sedang kesusahan. ulurkan tanganmu untuk mereka ", "02/12/2019",  new Long(10150000), "random3"},
-                {"Bantu dapet nilai", "kami butuh bantuan anda", "03/12/2019",  new Long(0), "angga"}
+                {"Bantu dapat nilai", "kami butuh bantuan anda", "03/12/2019",  new Long(0), "angga"}
             },
             new String [] {
                 "Judul", "Deskripsi", "Tanggal", "Total Donasi", "Author"
@@ -420,43 +420,32 @@ public class adminenv extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(60, 60, 60)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(baru, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addGap(60, 60, 60)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel8)
-                                .addComponent(jLabel7)))
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addGap(71, 71, 71)
-                            .addComponent(passbaru, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel8)
+                            .addComponent(jLabel7))
+                        .addGap(227, 227, 227))
+                    .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lama, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(120, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel1Layout.createSequentialGroup()
-                    .addGap(70, 70, 70)
-                    .addComponent(passlama, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(121, Short.MAX_VALUE)))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(37, 37, 37)
                 .addComponent(jLabel7)
-                .addGap(81, 81, 81)
+                .addGap(18, 18, 18)
+                .addComponent(lama, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(27, 27, 27)
                 .addComponent(jLabel8)
                 .addGap(18, 18, 18)
-                .addComponent(passbaru, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
+                .addComponent(baru, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(62, 62, 62))
-            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel1Layout.createSequentialGroup()
-                    .addGap(75, 75, 75)
-                    .addComponent(passlama, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(251, Short.MAX_VALUE)))
         );
 
         jTabbedPane1.addTab("SETTING", jPanel1);
@@ -557,6 +546,9 @@ public class adminenv extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btngantipassadminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btngantipassadminActionPerformed
+        lama.setText("");
+        baru.setText("");
+
         // TODO add your handling code here:
     }//GEN-LAST:event_btngantipassadminActionPerformed
 
@@ -582,6 +574,7 @@ public void addActionListener(ActionListener a){
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel auth;
+    private javax.swing.JPasswordField baru;
     private javax.swing.JButton btngantipassadmin;
     private javax.swing.JButton btnhapus;
     private javax.swing.JButton btnkeluaradm;
@@ -619,9 +612,8 @@ public void addActionListener(ActionListener a){
     private javax.swing.JLabel judulkampanye;
     private javax.swing.JLabel judulkampanye2;
     private javax.swing.JLabel judulkampanye3;
+    private javax.swing.JPasswordField lama;
     private javax.swing.JLabel no_hpadmin;
-    private javax.swing.JTextField passbaru;
-    private javax.swing.JTextField passlama;
     private javax.swing.JTable tabeluser;
     private javax.swing.JTable table;
     private javax.swing.JLabel tglkampanye1;

@@ -41,11 +41,11 @@ public class User extends Account implements Creator{
 
     @Override
     public void createCampaign(Campaign c) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        myCampaigns.add(c);
     }
 
     @Override
     public void deleteCampaign(ArrayList<Campaign> campaigns, Campaign c) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        myCampaigns.remove(c);
     }
 }
